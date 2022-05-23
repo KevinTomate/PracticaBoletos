@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:text="El Destino Feliz"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Numero de Boleto: "
+                android:textSize="30dp"
+                android:textColor="@color/white"/>
+
+            <EditText
+                android:id="@+id/txtNoBoleto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre del Cliente: "
+                android:textSize="30dp"
+                android:textColor="@color/white"/>
+
+            <EditText
+                android:id="@+id/txtNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edad: "
+                android:textSize="30dp"
+                android:textColor="@color/white"/>
+
+            <EditText
+                android:id="@+id/txtEdad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Destino: "
+                android:textSize="30dp"
+                android:textColor="@color/white"/>
+            <Spinner
+                android:id="@+id/spnDestino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo de Boleto: "
+                android:textSize="30dp"
+                android:textColor="@color/white"/>
+            <Spinner
+                android:id="@+id/spnTipoBoleto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Precio: "
+                android:textSize="30dp"
+                android:textColor="@color/white"/>
+            <EditText
+                android:id="@+id/txtPrecio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+               />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Dia: "
+                android:layout_width="125dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"/>
+            <TextView
+                android:text="Mes: "
+                android:gravity="center"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"/>
+            <TextView
+                android:text="Año: "
+                android:layout_width="125dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/spnDia"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content">
+                android:textSize="30dp"
+            </Spinner>
+            <Spinner
+                android:id="@+id/spnMes"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/spnAño"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lblImpresion"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="15dp">
+                <Button
+                    android:id="@+id/btnNuevo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#E57373"
+                    android:paddingRight="15dp"
+                    android:text="Limpiar"
+                    android:textSize="30dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#EF9A9A"
+                android:paddingLeft="15dp">
+                <Button
+                    android:id="@+id/btnImprimir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:backgroundTint="#64B5F6"
+                    android:paddingRight="20dp"
+                    android:text="CALCULAR"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
